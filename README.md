@@ -10,36 +10,6 @@ Client side routing allows your app to update the URL from a link click without 
 
 This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more dynamic user experiences with things like animation.
 
-Client side routing is enabled by creating a Router and linking/submitting to pages with Link and Form:
-  
-<code>
-import React from "react";
-import { createRoot } from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from "react-router-dom";
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
-      </div>
-    ),
-  },
-  {
-    path: "about",
-    element: <div>About</div>,
-  },
-]);
-createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
-  );</code>
-
 # To Run
 
 Run `npm start` in the project root and the app will be available on port 3000.
