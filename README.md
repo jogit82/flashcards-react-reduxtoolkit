@@ -10,9 +10,9 @@ Client side routing allows your app to update the URL from a link click without 
 
 This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more dynamic user experiences with things like animation.
 
-Client side routing is enabled by creating a Router and linking/submitting to pages with Link and <code><Form></code>:
+Client side routing is enabled by creating a Router and linking/submitting to pages with Link and Form:
   
-`import React from "react";
+<code>import React from "react";
 import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
@@ -39,8 +39,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
-);
-`
+  );</code>
 
 
 
