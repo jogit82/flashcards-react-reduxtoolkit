@@ -1,3 +1,5 @@
+An app to deep dive into React redux and redux toolkit. Required knowldge: JSX, JavaScript ES 6 +, Redux best practice, familiarity with Redux toolkit, React browser extension and Redux browser extension.
+
 # To Run
 
 Run `npm start` in the project root and the app will be available on port 3000.
