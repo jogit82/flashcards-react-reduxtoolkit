@@ -1,5 +1,15 @@
 An app to deep dive into React redux and redux toolkit. Required knowldge: React, React Redux, Redux Toolkit, React Router, JSX, JavaScript ES 6 +, Redux best practices, familiarity with Redux toolkit, React browser extension and Redux browser extension.
 
+### React Router
+
+React Router enables "client side routing".
+
+In traditional websites, the browser requests a document from a web server, downloads and evaluates CSS and JavaScript assets, and renders the HTML sent from the server. When the user clicks a link, it starts the process all over again for a new page.
+
+Client side routing allows your app to update the URL from a link click without making another request for another document from the server. Instead, your app can immediately render some new UI and make data requests with fetch to update the page with new information.
+
+This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more dynamic user experiences with things like animation.
+
 # To Run
 
 Run `npm start` in the project root and the app will be available on port 3000.
