@@ -1,4 +1,4 @@
-An app to deep dive into React redux and redux toolkit. Required knowldge: JSX, JavaScript ES 6 +, Redux best practice, familiarity with Redux toolkit, React browser extension and Redux browser extension.
+An app to deep dive into React redux and redux toolkit. Required knowldge: React, React Redux, Redux Toolkit, React Router, JSX, JavaScript ES 6 +, Redux best practices, familiarity with Redux toolkit, React browser extension and Redux browser extension.
 
 # To Run
 
