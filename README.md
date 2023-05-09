@@ -12,7 +12,8 @@ This enables faster user experiences because the browser doesn't need to request
 
 Client side routing is enabled by creating a Router and linking/submitting to pages with Link and Form:
   
-<code>import React from "react";
+<code>
+import React from "react";
 import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
@@ -20,7 +21,6 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,12 +36,9 @@ const router = createBrowserRouter([
     element: <div>About</div>,
   },
 ]);
-
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
   );</code>
-
-
 
 # To Run
 
