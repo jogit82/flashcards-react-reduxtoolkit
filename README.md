@@ -10,27 +10,35 @@ Client side routing allows your app to update the URL from a link click without 
 
 This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more dynamic user experiences with things like animation.
 
+### Routes
+
 On the '/topics/new' page:
--Users can create topics
+
+- Users can create topics
 
 On the '/topics' page:
--Users can view all topics
--Users can click on an individual topic and be redirected to the page for that topic
+
+- Users can view all topics
+- Users can click on an individual topic and be redirected to the page for that topic
 
 On the /topics/:topicId page:
--Users can view an individual topic and all quizzes for that topic
--Users can click on a quiz associated with a topic and be redirected to that quiz’s page
+
+- Users can view an individual topic and all quizzes for that topic
+- Users can click on a quiz associated with a topic and be redirected to that quiz’s page
 
 On the 'quizzes/new' page:
--Users can create quizzes that are associated with topics and contain lists of flashcards
--Users can add and remove card fields in the new quiz form
+
+- Users can create quizzes that are associated with topics and contain lists of flashcards
+- Users can add and remove card fields in the new quiz form
 
 On the '/quizzes' page:
--Users can view all quizzes
--Users can click on an individual quiz and be redirected to that quiz’s page
+
+- Users can view all quizzes
+- Users can click on an individual quiz and be redirected to that quiz’s page
 
 On the '/quizzes/:quizId' page:
--Users can view an individual quiz and flip cards over
+
+- Users can view an individual quiz and flip cards over
 
 # To Run
 
