@@ -1,4 +1,4 @@
-An app to deep dive into React redux and redux toolkit. Required knowldge: React, React Redux, Redux Toolkit, React Router, JSX, JavaScript ES 6 +, Redux best practices, familiarity with Redux toolkit, React browser extension and Redux browser extension.
+An app to deep dive into React redux and redux toolkit. Required knowldge: React, React Redux, Redux Toolkit, React Router, JSX, JavaScript ES 6 +, React Router, Redux best practices, familiarity with Redux toolkit, React browser extension and Redux browser extension.
 
 ### React Router
 
@@ -9,6 +9,28 @@ In traditional websites, the browser requests a document from a web server, down
 Client side routing allows your app to update the URL from a link click without making another request for another document from the server. Instead, your app can immediately render some new UI and make data requests with fetch to update the page with new information.
 
 This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more dynamic user experiences with things like animation.
+
+On the '/topics/new' page:
+-Users can create topics
+
+On the '/topics' page:
+-Users can view all topics
+-Users can click on an individual topic and be redirected to the page for that topic
+
+On the /topics/:topicId page:
+-Users can view an individual topic and all quizzes for that topic
+-Users can click on a quiz associated with a topic and be redirected to that quiz’s page
+
+On the 'quizzes/new' page:
+-Users can create quizzes that are associated with topics and contain lists of flashcards
+-Users can add and remove card fields in the new quiz form
+
+On the '/quizzes' page:
+-Users can view all quizzes
+-Users can click on an individual quiz and be redirected to that quiz’s page
+
+On the '/quizzes/:quizId' page:
+-Users can view an individual quiz and flip cards over
 
 # To Run
 
