@@ -75,7 +75,30 @@ addQuizId: (state, action) => {
 
 Slice 2: quizzesSlice
 
+```
+addQuiz: (state, action) => {
+    const { quizId, name, topicId, cardIds } = action.payload;
+    state.quizzes[quizId] = {
+        id: quizId,
+        name: name,
+        topicId: topicId,
+        cardIds: cardIds
+    };
+}
+```
+
 Slice 3: cardsSlice
+
+```
+addCard: (state, action) => {
+    const { cardId, front, back} = action.payload;
+    state.cards[cardId] =  {
+        id: cardId,
+        front: front,
+        back: back
+    };
+}
+```
 
 # To Run
 
