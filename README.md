@@ -53,11 +53,29 @@ The app's state is totally normalized, with slices for topics, quizzes, and card
 - `/quizzes` – index of all quizzes
 - `/quizzes/:quizId` – page for an individual quiz
 
-# Slices
+# Slices and Reducers
 
-Slice 1: Topics
-Slice 2: Quizzes
-Slice 3: Cards
+Slice 1: topicsSlice
+
+```
+addTopic: (state, action) => {
+    const { id, name, icon } = action.payload;
+    state.topics[id] = {
+    id: id,
+    name: name,
+    icon: icon,
+    quizIds: []
+    };
+},
+addQuizId: (state, action) => {
+    const { quizId, topicId } = action.payload;
+    state.topics[topicId].quizIds.push(quizId);
+}
+```
+
+Slice 2: quizzesSlice
+
+Slice 3: cardsSlice
 
 # To Run
 
