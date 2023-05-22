@@ -10,7 +10,7 @@ Client side routing allows your app to update the URL from a link click without 
 
 This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more dynamic user experiences with things like animation.
 
-### Routes
+### Pages/Storyboard
 
 On the '/topics/new' page:
 
@@ -40,29 +40,31 @@ On the '/quizzes/:quizId' page:
 
 - Users can view an individual quiz and flip cards over
 
-# To Run
-
-Run `npm start` in the project root and the app will be available on port 3000.
-
 # State
 
 The app's state is totally normalized, with slices for topics, quizzes, and cards.
 
 # Routes
 
-- `/new-topic` – form to create a new topic
+- `/topic/new` – form to create a new topic
 - `/topics` – index of all topics
 - `/topics/:topicId` – page for an individual topic
-- `/new-quiz` – form to create a new quiz
+- `/quizzes/new` – form to create a new quiz
 - `/quizzes` – index of all quizzes
 - `/quizzes/:quizId` – page for an individual quiz
+
+# Slices
+
+Slice 1: Topics
+Slice 2: Quizzes
+Slice 3: Cards
+
+# To Run
+
+Run `npm start` in the project root and the app will be available on port 3000.
 
 # To Test
 
 1. Create topics
 2. Create quizzes
 3. Visit the page for an individual quiz and flip the cards over
-
-# Questions
-
-Is this appropriately scoped? Does it have too many features? Too few?
