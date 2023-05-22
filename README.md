@@ -55,6 +55,8 @@ The app's state is totally normalized, with slices for topics, quizzes, and card
 
 # Slices and Reducers
 
+Each slice’s state should include an object storing all the topics/quizzes/cards keyed by their id. This will allow us to quickly retrieve an object’s information whenever we need to look it up.
+
 Slice 1: topicsSlice
 
 ```
@@ -73,6 +75,8 @@ addQuizId: (state, action) => {
 }
 ```
 
+- Each topic which will have a quizIds array corresponding to the associated quizzes in state.
+
 Slice 2: quizzesSlice
 
 ```
@@ -86,6 +90,8 @@ addQuiz: (state, action) => {
     };
 }
 ```
+
+- Each individual quiz will have a topicId value corresponding to an individual topic in state.
 
 Slice 3: cardsSlice
 
