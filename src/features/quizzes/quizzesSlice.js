@@ -18,6 +18,15 @@ const options = {
   }
 };
 
+// thunk to quiz to the related topic
+export const addQuizAddQuizId = (quiz) => {
+  const { quizId, name, topicId, cardIds } = quiz;
+  return (dispatch) => {
+    dispatch(quizzesSlice.actions.addQuiz(quiz));
+    dispatch(addQuizId({ quizId: quizId, topicId: topicId }));
+  };
+};
+
 export const quizzesSlice = createSlice(options);
 // Export selector
 export const selectQuizzes = (state) => state.quizzes.quizzes;
