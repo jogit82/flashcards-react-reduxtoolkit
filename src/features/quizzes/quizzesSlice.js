@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { addQuizId } from "../topics/topicsSlice";
 
 const options = {
   name: "quizzes",
@@ -7,7 +8,7 @@ const options = {
   },
   reducers: {
     addQuiz: (state, action) => {
-      const { id, name, topicId, cardIds } = action.payload;
+      const { quizId, name, topicId, cardIds } = action.payload;
       state.quizzes[quizId] = {
         id: quizId,
         name: name,
