@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import ROUTES from "../app/routes";
-import { selectTopics } from "../features/topicsSlice";
+import { selectTopics } from "../features/topics/topicsSlice";
 import { addQuizAddQuizId } from "../features/quizzes/quizzesSlice";
 
 export default function NewQuizForm() {
