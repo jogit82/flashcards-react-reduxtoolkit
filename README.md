@@ -1,6 +1,6 @@
 Hosted:
 
-Demo here https://646c5e31fb1d0931005d1254--shimmering-gnome-f4831f.netlify.app
+Demo here https://646c5e31fb1d0931005d1254--shimmering-gnome-f4831f.netlify.app (Broken, sorry, I will fix it, meanwhile, please read the description below)
 
 An app to deep dive into React redux and redux toolkit. Required knowldge: React, React Redux, Redux Toolkit, React Router, JSX, JavaScript ES 6 +, React Router, Redux best practices, familiarity with Redux toolkit, React browser extension and Redux browser extension.
 
